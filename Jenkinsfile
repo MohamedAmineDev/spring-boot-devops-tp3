@@ -18,7 +18,7 @@ pipeline{
       steps{
         dir("spring-boot-devops-tp3"){
           sh "mvn clean install -DskipTests"
-          sh "docker build -t new-backend-app ."
+          sh "docker build -t web-backend ."
         }
       }
     }
